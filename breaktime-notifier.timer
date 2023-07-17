@@ -1,0 +1,13 @@
+[Unit]
+Description=Send a notification every one hour
+Requires=breaktime-notifier.service
+RefuseManualStart=no  # Allow manual starts
+RefuseManualStop=no   # Allow manual stops
+
+[Timer]
+Unit=breaktime-notifier.service
+OnStartupSec=0
+OnCalendar=*-*-* *:00:00
+
+[Install]
+WantedBy=timers.target

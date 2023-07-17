@@ -1,0 +1,9 @@
+[Unit]
+Description=A job to hourly notify user to take a break and come back.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/breaktime-notifier.sh
+
+[Install]
+WantedBy=default.target
