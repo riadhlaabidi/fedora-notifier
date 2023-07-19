@@ -1,8 +1,8 @@
 [Unit]
 Description=Send a notification every one hour
 Requires=breaktime-notifier.service
-RefuseManualStart=no  # Allow manual starts
-RefuseManualStop=no   # Allow manual stops
+RefuseManualStart=false  # Allow manual starts
+RefuseManualStop=false   # Allow manual stops
 
 [Timer]
 Unit=breaktime-notifier.service
