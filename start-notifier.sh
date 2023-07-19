@@ -1,5 +1,4 @@
-systemctl enable breaktime-notifier.service
-systemctl start breaktime-notifier.service
-systemctl enable breaktime-notifier.timer
-systemctl start breaktime-notifier.timer
-echo "Breaktime notifier job is now running."
+systemctl --user enable breaktime-notifier.service
+systemctl --user start breaktime-notifier.service
+systemctl --user enable breaktime-notifier.timer
+systemctl --user start breaktime-notifier.timer
