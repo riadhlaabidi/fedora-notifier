@@ -7,14 +7,14 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-cp ./breaktime-notifier.sh /usr/local/bin/
+cp ./breaktime-notifier.sh /usr/bin/
 if [ $? -ne 0 ]; then 
     echo -e "\033[0;31mError installing break time notifier.\033[0m"
     exit 1
 fi
 
 # Make script executable
-chmod +x /usr/local/bin/breaktime-notifier.sh
+chmod +x /usr/bin/breaktime-notifier.sh
 if [ $? -ne 0 ]; then 
     echo -e "\033[0;31mError installing break time notifier.\033[0m"
     exit 1
